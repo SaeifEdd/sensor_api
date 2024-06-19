@@ -78,5 +78,5 @@ if __name__ == "__main__":
         year, month, day = 2023, 10, 25
     queried_date = date(year, month, day)
 
-    capteur = VisitSensor(1500, 150)
+    capteur = VisitSensor(1500, 150, perc_malfunction=10)
     print(capteur.get_visit_count(queried_date))
